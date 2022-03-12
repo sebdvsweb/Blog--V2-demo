@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon" />
+    
+    <!-- Map CSS -->
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" />
+    
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
+    
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+    
+    <!-- Title -->
+    <title>Le langage JavaScript</title>
+  </head>
+  <body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container">
+  
+      <!-- Brand -->
+      <div class="avatar avatar-xl">
+        <a class="navbar-brand" href="./index.html">
+          <img src="./assets/img/link.jpeg" class="avatar-img rounded-circle" alt="...">
+        </a>
+      </div>
+
+      
+  
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Collapse -->
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+  
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fe fe-x"></i>
+        </button>
+  
+        <!-- Navigation -->
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarLandings" data-bs-toggle="dropdown" href="index.html" aria-haspopup="true" aria-expanded="false">
+              Blog
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarPages" data-bs-toggle="dropdown" href="about.html" aria-haspopup="true" aria-expanded="false">
+              À propos de moi
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarAccount" data-bs-toggle="dropdown" href="contact.html" aria-haspopup="true" aria-expanded="false">
+              Contact
+            </a>
+          </li>
+        </ul>
+  
+        <!-- Button -->
+        <a class="navbar-btn btn btn-sm btn-primary lift ms-auto" href="https://www.garage404.com/" target="_blank">
+          Garage 404
+        </a>
+  
+      </div>
+  
+    </div>
+  </nav>
+
+    <!-- IMAGE -->
+    <section data-jarallax data-speed=".8" class="py-12 py-md-15 bg-cover jarallax overlay overlay-black overlay-70" style="background-image: url(assets/img/photos/hero-js.jpg);">
+    
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-7 text-center">
+
+            <!-- Heading -->
+            <h1 class="display-2 fw-bold text-white">
+              Le Langage JavaScript
+            </h1>
+
+            <!-- Text -->
+            <p class="lead mb-0 text-white-75">
+              Quelques exercices pour comprendre le rôle du JS
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    
+    </section>
+
+    <!-- HEADER -->
+    <section class="pt-8 pt-md-11">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-9 col-xl-8">
+
+            <!-- Heading -->
+            <h1 class="display-4 text-center">
+              Euh... C'est quoi le JavaScript ?
+            </h1>
+
+            <!-- Text -->
+            <p class="lead mb-7 text-center text-muted">
+                JavaScript est un langage de script orienté objet. Il permet, entre autres, d'introduire sur une page web ou HTML des petites animations, des effets et des interactions entre le site web et son utilisateur.
+            </p>
+
+            <!-- Meta -->
+            <div class="row align-items-center py-5 border-top border-bottom">
+              <div class="col-auto">
+
+                <!-- Avatar -->
+                <div class="avatar avatar-lg">
+                  <a class="navbar-brand" href="./index.html">
+                  <img src="./assets/img/link.jpeg" alt="..." class="avatar-img rounded-circle">
+                </a>
+                </div>
+
+              </div>
+              <div class="col ms-n5">
+
+                <!-- Name -->
+                <h6 class="text-uppercase mb-0">
+                  Sébastien De Vos
+                </h6>
+
+                <!-- Date -->
+                <time class="fs-sm text-muted" datetime="2021-11-27">
+                  Publié le 5 mars 2022
+                </time>
+
+              </div>
+              <div class="col-auto">
+
+                <!-- Share -->
+                <span class="h6 text-uppercase text-muted d-none d-md-inline me-4">
+                  Partager:
+                </span>
+
+                <!-- Icons -->
+                <ul class="d-inline list-unstyled list-inline list-social">
+                  <li class="list-inline-item list-social-item me-3">
+                    <a href="#!" class="text-decoration-none">
+                      <img src="./assets/img/icons/social/instagram.svg" class="list-social-icon" alt="...">
+                    </a>
+                  </li>
+                  <li class="list-inline-item list-social-item me-3">
+                    <a href="#!" class="text-decoration-none">
+                      <img src="./assets/img/icons/social/facebook.svg" class="list-social-icon" alt="...">
+                    </a>
+                  </li>
+                  <li class="list-inline-item list-social-item me-3">
+                    <a href="#!" class="text-decoration-none">
+                      <img src="./assets/img/icons/social/twitter.svg" class="list-social-icon" alt="...">
+                    </a>
+                  </li>
+                </ul>
+
+              </div>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- SECTION -->
+    <section class="pt-6 pt-md-8">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-9 col-xl-8">
+
+            <!-- Fugure -->
+            <figure class="figure mb-7">
+
+              <!-- Image -->
+              <img class="figure-img img-fluid rounded lift lift-lg" src="assets/img/photos/javascript-e.jpg" alt="...">
+
+              <!-- Caption -->
+              <figcaption class="figure-caption text-center">
+                Le contenu des exercices JS
+              </figcaption>
+
+            </figure>
+
+            <!-- Text -->
+            <p>
+                Après avoir travaillé sur le HTML et le CSS, nous avons travaillé sur des petits exercices de Javascript. Contrairement aux deux autres langages, celui-ci permet de faire des interactions directs avec l'utilisateur. 
+            </p>
+            <p class="mb-0">
+                Par exemple, lui demander son nom, son prénom, son âge, etc, et on peut créer des variables qui récupèrent ces informations et les affichent ensuite de différentes manières.
+            </p>
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- SECTION -->
+    <section class="pt-6 pt-md-8">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-9 col-xl-8">
+
+            <!-- Heading -->
+            <h2 class="fw-bold">
+              Variables et conditions
+            </h2>
+
+            <!-- Text -->
+            <p>
+                Une variable est un objet repéré par son nom, pouvant contenir des données, qui pourront être modifiées lors de l'exécution du programme. Dans nos exercices, nous avons utilisé les variables pour récupérer les données de champ input, de div ou fenêtre prompt. On utilise <i>var</i> ou <i>let</i> pour définir une variable.
+            </p>
+            <p>
+                La méthode prompt() affiche une boîte de dialogue, éventuellement avec un message, qui invite l'utilisateur à saisir un texte. On peut voir un exemple de son utilisation sur la capture ci-dessus et sur la vidéo ci-dessous.
+            </p>
+            <p>&nbsp;</p>
+            <p>
+                <video width="100%" autoplay controls muted>
+                    <source src="assets/img/photos/javascript.mp4" type="video/mp4">
+                  </video>
+            </p>
+            <p>
+                L'instruction <i>if</i> exécute une instruction si une condition donnée est vraie ou équivalente à vrai. Si la condition n'est pas vérifiée, il est possible d'utiliser une autre instruction : <i>else</i>.
+            </p>
+            <pre>if (condition) {
+                condition1
+              } else {
+                condition2
+              }</pre>
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- SECTION -->
+    <section class="pt-6 pt-md-8">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-11 col-xl-10">
+
+            <!-- Slider -->
+            <div data-flickity='{"wrapAround": true, "pageDots": false, "imagesLoaded": true, "adaptiveHeight": true}'>
+              <div class="w-100">
+                <img src="assets/img/photos/javascript-f.jpg" alt="..." class="img-fluid rounded">
+              </div>
+              <div class="w-100">
+                <img src="assets/img/photos/javascript-g.jpg" alt="..." class="img-fluid rounded">
+              </div>
+              <div class="w-100">
+                <img src="assets/img/photos/javascript-h.jpg" alt="..." class="img-fluid rounded">
+              </div>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- SECTION -->
+    <section class="pt-6 pt-md-8">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-9 col-xl-8">
+
+            <!-- Heading -->
+            <h2 class="fw-bold">
+              Exemples d'exercices
+            </h2>
+
+            <!-- Text -->
+            <p class="mb-7">
+              Voici un petit listing de certaines consignes données aux élèves sur les exercices à réaliser :
+            </p>
+
+            <!-- List -->
+            <ul class="list-unstyled mb-7">
+              <li class="d-flex">
+
+                <!-- Check -->
+                <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                  <i class="fe fe-check"></i>
+                </div>
+
+                <!-- Text -->
+                <p>
+                    Afficher une boîte de dialogue permettant de saisir son prénom. Afficher dans une boîte de dialogue "Bonjour, " suivi du prénom saisi.
+                </p>
+
+              </li>
+              <li class="d-flex">
+
+                <!-- Check -->
+                <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                  <i class="fe fe-check"></i>
+                </div>
+
+                <!-- Text -->
+                <p>
+                    Demander à l’utilisateur deux nombres à virgule. Ne garder que la partie entière du premier .  
+                    Les multiplier et afficher le résultat dans une boîte de dialogue.
+                </p>
+
+              </li>
+              <li class="d-flex">
+
+                <!-- Check -->
+                <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                  <i class="fe fe-check"></i>
+                </div>
+
+                <!-- Text -->
+                <p>
+                    Demander à l’utilisateur sa pointure et son année de naissance. Créer une fonction qui fait les calculs suivants : Multiplier la pointure par 2, Ajouter 5 au résultat, Multiplier le tout par 50, Soustraire l’année de naissance, Ajouter au tout 1766. La fonction doit retourner le résultat. Tester avec votre date de naissance et votre pointure.
+                </p>
+
+              </li>
+              <li class="d-flex">
+
+                <!-- Check -->
+                <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                  <i class="fe fe-check"></i>
+                </div>
+
+                <!-- Text -->
+                <p>
+                    Demander à l’utilisateur de saisir son âge. S’il a plus de 18 ans, afficher *" Vous êtes majeur "*. Sinon afficher *" Vous êtes mineur "*.
+                </p>
+
+              </li>
+              <li class="d-flex">
+
+                <!-- Check -->
+                <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                  <i class="fe fe-check"></i>
+                </div>
+
+                <!-- Text -->
+                <p>
+                    Dans le fichier HTML fourni, changer l'image au survol de celle-ci par la deuxième.
+                </p>
+
+              </li>
+            </ul>
+
+             <!-- Divider -->
+             <hr class="hr-md mb-7">
+
+<p>Pour les exercices de niveau 2, un peu plus poussé, les élèves ont appris certains notions de javascript indispensable de type <i>querySelector</i> qui permet de sélectionner un élement HTML par son identifiant ou sa classe, ou <i>addEventListener</i>. Plusieurs événements peuvent-être déclenchés sur une page et il est possible d'écouter ces événements grâce à la méthode <i>addEventListener()</i> et de déclencher une fonction en guise de rétroaction. Les clics (<i>mouseclick</i>) ou les survols (<i>mouseover</i>) sont des exemples d'évènements possibles sur un objet (bouton, image, etc).</p>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- SECTION -->
+    <section class="pt-6 pt-md-8">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-9 col-xl-8">
+
+            <!-- Heading -->
+            <h3 class="fw-bold">
+              Ce blog est entièrement conçu avec le système de grille de Bootstrap.
+            </h3>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+
+    <!-- SECTION -->
+    <section class="pt-6 pt-md-8 pb-8 pb-md-11">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-9 col-xl-8">
+
+            <!-- Meta -->
+            <div class="row align-items-center py-5 border-top border-bottom">
+              <div class="col-auto">
+
+                <!-- Avatar -->
+                <div class="avatar avatar-lg">
+                  <img src="./assets/img/link.jpeg" alt="..." class="avatar-img rounded-circle">
+                </div>
+
+              </div>
+              <div class="col ms-n5">
+
+                <!-- Name -->
+                <h6 class="text-uppercase mb-0">
+                  Sébastien De Vos
+                </h6>
+
+                <!-- Date -->
+                <time class="fs-sm text-muted" datetime="2019-05-20">
+                  Publié le 5 mars 2022
+                </time>
+
+              </div>
+              <div class="col-auto">
+
+                <!-- Share -->
+                <span class="h6 text-uppercase text-muted d-none d-md-inline me-4">
+                  Partager :
+                </span>
+
+                <!-- Icons -->
+                <ul class="d-inline list-unstyled list-inline list-social">
+                  <li class="list-inline-item list-social-item me-3">
+                    <a href="#!" class="text-decoration-none">
+                      <img src="./assets/img/icons/social/instagram.svg" class="list-social-icon" alt="...">
+                    </a>
+                  </li>
+                  <li class="list-inline-item list-social-item me-3">
+                    <a href="#!" class="text-decoration-none">
+                      <img src="./assets/img/icons/social/facebook.svg" class="list-social-icon" alt="...">
+                    </a>
+                  </li>
+                  <li class="list-inline-item list-social-item me-3">
+                    <a href="#!" class="text-decoration-none">
+                      <img src="./assets/img/icons/social/twitter.svg" class="list-social-icon" alt="...">
+                    </a>
+                  </li>
+                </ul>
+
+              </div>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- SHAPE -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x text-light">
+        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="py-8 py-md-11 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-3">
+    
+            <!-- Brand -->
+            <img src="./assets/img/brand.svg" alt="..." class="footer-brand img-fluid mb-2">
+    
+            <!-- Text -->
+            <p class="text-gray-700 mb-2">
+              A better way to build.
+            </p>
+    
+            <!-- Social -->
+            <ul class="list-unstyled list-inline list-social mb-6 mb-md-0">
+              <li class="list-inline-item list-social-item me-3">
+                <a href="#!" class="text-decoration-none">
+                  <img src="./assets/img/icons/social/instagram.svg" class="list-social-icon" alt="...">
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item me-3">
+                <a href="#!" class="text-decoration-none">
+                  <img src="./assets/img/icons/social/facebook.svg" class="list-social-icon" alt="...">
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item me-3">
+                <a href="#!" class="text-decoration-none">
+                  <img src="./assets/img/icons/social/twitter.svg" class="list-social-icon" alt="...">
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item">
+                <a href="#!" class="text-decoration-none">
+                  <img src="./assets/img/icons/social/pinterest.svg" class="list-social-icon" alt="...">
+                </a>
+              </li>
+            </ul>
+    
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">    
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+          </div>
+          <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
+    
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+    
+            <!-- Heading -->
+            <h6 class="fw-bold text-uppercase text-gray-700">
+              Legal
+            </h6>
+    
+            <!-- List -->
+            <ul class="list-unstyled text-muted mb-0">
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Documentation
+                </a>
+              </li>
+              <li class="mb-3">
+                <a href="#!" class="text-reset">
+                  Changelog
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="text-reset">
+                  Pagebuilder
+                </a>
+              </li>
+            </ul>
+    
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <!-- Map JS -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+    
+    <!-- Vendor JS -->
+    <script src="./assets/js/vendor.bundle.js"></script>
+    
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.bundle.js"></script>
+
+  </body>
+</html>
