@@ -17,12 +17,12 @@
     <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
     
     <!-- Title -->
-    <title>À propos du langage JavaScript</title>
+    <title>Projet film</title>
   </head>
   <body>
 
-     <!-- NAVBAR -->
-     <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
       <div class="container">
     
         <!-- Brand -->
@@ -75,9 +75,9 @@
     
       </div>
     </nav>
-    
+
     <!-- IMAGE -->
-    <section data-jarallax data-speed=".8" class="py-12 py-md-15 bg-cover jarallax overlay overlay-black overlay-70" style="background-image: url(assets/img/photos/hero-js.jpg);">
+    <section data-jarallax data-speed=".8" class="py-12 py-md-15 bg-cover jarallax overlay overlay-black overlay-70" style="background-image: url(assets/img/covers/projet-films.jpg);">
     
       <div class="container">
         <div class="row justify-content-center">
@@ -85,12 +85,12 @@
 
             <!-- Heading -->
             <h1 class="display-2 fw-bold text-white">
-              Le Langage JavaScript
+              Projet Films
             </h1>
 
             <!-- Text -->
             <p class="lead mb-0 text-white-75">
-              Quelques exercices pour comprendre le rôle du JS
+              Présentation d'un premier projet mêlant Bootstrap, JavaScript et une API.
             </p>
 
           </div>
@@ -107,12 +107,12 @@
 
             <!-- Heading -->
             <h1 class="display-4 text-center">
-              Euh... C'est quoi le JavaScript ????
+              Le projet films c'est quoi ?
             </h1>
 
             <!-- Text -->
             <p class="lead mb-7 text-center text-muted">
-                JavaScript est un langage de script orienté objet. Il permet, entre autres, d'introduire sur une page web ou HTML des petites animations, des effets et des interactions entre le site web et son utilisateur.
+              Le but de cet exercice qui nous a occupé pendant huit séances est d'utiliser une API sur le site de l'Open Movie Database pour créer un catalogue de films à partir du framework Bootstrap que nous avons découvert en début d'année et d'un peu de JavaScript.
             </p>
 
             <!-- Meta -->
@@ -135,8 +135,8 @@
                 </h6>
 
                 <!-- Date -->
-                <time class="fs-sm text-muted" datetime="2021-11-27">
-                  Publié le 5 mars 2022
+                <time class="fs-sm text-muted" datetime="2022-06-11">
+                  Publié le 11 juin 2022
                 </time>
 
               </div>
@@ -180,26 +180,45 @@
         <div class="row justify-content-center">
           <div class="col-12 col-md-10 col-lg-9 col-xl-8">
 
-            <!-- Fugure -->
+            <!-- Figure -->
             <figure class="figure mb-7">
 
               <!-- Image -->
-              <img class="figure-img img-fluid rounded lift lift-lg" src="assets/img/photos/javascript-e.jpg" alt="...">
+              <img class="figure-img img-fluid rounded lift lift-lg" src="assets/img/photos/site-omdb.jpg" alt="...">
 
               <!-- Caption -->
               <figcaption class="figure-caption text-center">
-                Le contenu des exercices JS
+                Le site de OMDB d'où l'on récupère la liste des films
               </figcaption>
 
             </figure>
 
             <!-- Text -->
             <p>
-                Après avoir travaillé sur le HTML et le CSS, nous avons travaillé sur des petits exercices de Javascript. Contrairement aux deux autres langages, celui-ci permet de faire des interactions directs avec l'utilisateur. 
+              Les élèves étaient libres de choisir leur maquette pour ce projet. La seule contrainte était d'utiliser le framework Bootstrap et son système de <a href="https://getbootstrap.com/docs/4.0/components/card/" target="_blank">cards</a> pour l'affichage des films.
             </p>
             <p class="mb-0">
-                Par exemple, lui demander son nom, son prénom, son âge, etc, et on peut créer des variables qui récupèrent ces informations et les affichent ensuite de différentes manières.
+              Macéo, Arthur et Timéo ont donc commencé par réaliser un squelette de site intégrant une navbar et des cards de Bootstrap. Pour donner un peu de punch visuel à la page, il a été décidé d'y ajouter un carousel qui ferait défiler 3 ou 4 images de films.
             </p>
+
+             <!-- Figure -->
+             <figure class="figure mb-7 mt-6">
+
+                <!-- Image -->
+                <img class="figure-img img-fluid rounded lift lift-lg" src="assets/img/photos/films-carousel.jpg" alt="...">
+  
+                <!-- Caption -->
+                <figcaption class="figure-caption text-center">
+                  Image tirée du carousel d'accueil du projet
+                </figcaption>
+  
+              </figure>
+
+              <p class="mb-0">
+                Ensuite, ils ont créés quetre exemples de cards en HTML, chacun avec 4 films de son choix pour comprendre le fonctionnement des cards et leur donner un peu plus de couleur avec du CSS... Ces cards seront au final supprimé et remplacé par d'autres que nous allons créés dynamiquement en JavaScript.
+              </p>
+
+              
           </div>
         </div> <!-- / .row -->
       </div> <!-- / .container -->
@@ -213,53 +232,77 @@
 
             <!-- Heading -->
             <h2 class="fw-bold">
-              Variables et conditions
+              Créer des cards dynamiques en JS
             </h2>
 
             <!-- Text -->
             <p>
-                Une variable est un objet repéré par son nom, pouvant contenir des données, qui pourront être modifiées lors de l'exécution du programme. Dans nos exercices, nous avons utilisé les variables pour récupérer les données de champ input, de div ou fenêtre prompt. On utilise <i>var</i> ou <i>let</i> pour définir une variable.
+              L'étape suivante du projet séest déroulée sur Codepen. Nous y avons écrit le JavaScript servant à récupérer les infos des films.
             </p>
-            <p>
-                La méthode prompt() affiche une boîte de dialogue, éventuellement avec un message, qui invite l'utilisateur à saisir un texte. On peut voir un exemple de son utilisation sur la capture ci-dessus et sur la vidéo ci-dessous.
-            </p>
-            <p>&nbsp;</p>
-            <p>
-                <video width="100%" autoplay controls muted>
-                    <source src="assets/img/photos/javascript.mp4" type="video/mp4">
-                  </video>
-            </p>
-            <p>
-                L'instruction <i>if</i> exécute une instruction si une condition donnée est vraie ou équivalente à vrai. Si la condition n'est pas vérifiée, il est possible d'utiliser une autre instruction : <i>else</i>.
-            </p>
-            <pre>if (condition) {
-                condition1
-              } else {
-                condition2
-              }</pre>
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>
 
-    <!-- SECTION -->
-    <section class="pt-6 pt-md-8">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-lg-11 col-xl-10">
+            <!-- Figure -->
+            <figure class="figure mb-7 mt-6">
 
-            <!-- Slider -->
-            <div data-flickity='{"wrapAround": true, "pageDots": false, "imagesLoaded": true, "adaptiveHeight": true}'>
-              <div class="w-100">
-                <img src="assets/img/photos/javascript-f.jpg" alt="..." class="img-fluid rounded">
-              </div>
-              <div class="w-100">
-                <img src="assets/img/photos/javascript-g.jpg" alt="..." class="img-fluid rounded">
-              </div>
-              <div class="w-100">
-                <img src="assets/img/photos/javascript-h.jpg" alt="..." class="img-fluid rounded">
-              </div>
-            </div>
+                <!-- Image -->
+                <img class="figure-img img-fluid rounded lift lift-lg" src="assets/img/photos/films-js-codepen.jpg" alt="...">
+  
+                <!-- Caption -->
+                <figcaption class="figure-caption text-center">
+                  Le JavaScript pour récupérer les infos de l'API et les afficher
+                </figcaption>
+  
+              </figure>
+
+              <!-- Text -->
+            <p>
+                Les différentes étapes à réaliser étaient :
+              </p>
+
+            <ul class="mb-0">
+                <li class="d-flex">
+
+                    <!-- Check -->
+                    <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                      <i class="fe fe-check"></i>
+                    </div>
+    
+                <p>Récupérer les films souhaités par l'API et les enregistrer dans un fichier JSON (le JSON est un format qui stocke des informations structurées et est principalement utilisé pour transférer des données entre un serveur et un client). </p>
+              </li>
+
+               <li class="d-flex">
+
+                    <!-- Check -->
+                    <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                      <i class="fe fe-check"></i>
+                    </div>
+    
+                <p>
+                Afficher les éléments souhaités des films (Poster, titre, année) par Javascript.</p>
+              </li>
+              <li class="d-flex">
+
+                <!-- Check -->
+                <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
+                  <i class="fe fe-check"></i>
+                </div>
+
+            <p>
+                Recréer en Javascript la structure d'une card Bootstrap (Image, title, body, etc).</p>
+              </li>
+            </ul>
+
+             <!-- Figure -->
+             <figure class="figure mb-7 mt-6">
+
+                <!-- Image -->
+                <img class="figure-img img-fluid rounded lift lift-lg" src="assets/img/photos/films-contenu-json.jpg" alt="...">
+  
+                <!-- Caption -->
+                <figcaption class="figure-caption text-center">
+                 Le fichier JSON contient les infos des films à afficher
+                </figcaption>
+  
+              </figure>
 
           </div>
         </div> <!-- / .row -->
@@ -274,88 +317,55 @@
 
             <!-- Heading -->
             <h2 class="fw-bold">
-              Exemples d'exercices
+              Intégrer le JS sur notre projet avec VSCode
             </h2>
 
             <!-- Text -->
             <p class="mb-7">
-              Voici un petit listing de certaines consignes données aux élèves sur les exercices à réaliser :
+              Une fois le code Javascript fonctionnel et nettoyé de ses erreurs (et il y en a eu !), nous l'avons intégré à notre site créé en tout début de projet avec Bootstrap grâce au logiciel VSCode. Nous avons ensuite corrigé quelques petits bugs d'affichage, lié principalement à des soucis de CSS. 
             </p>
 
-            <!-- List -->
-            <ul class="list-unstyled mb-7">
-              <li class="d-flex">
+            <!-- Divider -->
+            <hr class="hr-md mb-7">
 
-                <!-- Check -->
-                <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                  <i class="fe fe-check"></i>
-                </div>
+            <!-- Text -->
+            <p>
+             La dernière étape du projet était la mise en ligne du site avec Github, que nous avons appris à utiliser. Il fallait d'abord installer git sur les ordinateurs, se connecter à son compte et créer le <i>repository</i> (dossier) qui allait contenir le projet en ligne, préparer l'envoi, ajouter les fichiers à la liste d'envoi et ensuite envoyer (<i>push</i> avec Github). Nous avons utilisé l'invite de commande Windows pour les différentes étapes de cette partie qui se déroulait entièrement en lignes de commande.
+            </p>
 
-                <!-- Text -->
-                <p>
-                    Afficher une boîte de dialogue permettant de saisir son prénom. Afficher dans une boîte de dialogue "Bonjour, " suivi du prénom saisi.
-                </p>
+            <!-- Figure -->
+            <figure class="figure mb-7 mt-6">
 
-              </li>
-              <li class="d-flex">
+                <!-- Image -->
+                <img class="figure-img img-fluid rounded lift lift-lg" src="assets/img/photos/films-mise-en-ligne-github.jpg" alt="...">
+  
+                <!-- Caption -->
+                <figcaption class="figure-caption text-center">
+                 La mise en ligne avec Github
+                </figcaption>
+  
+              </figure>
 
-                <!-- Check -->
-                <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                  <i class="fe fe-check"></i>
-                </div>
+              <!-- Divider -->
+            <hr class="hr-md mb-7">
 
-                <!-- Text -->
-                <p>
-                    Demander à l’utilisateur deux nombres à virgule. Ne garder que la partie entière du premier .  
-                    Les multiplier et afficher le résultat dans une boîte de dialogue.
-                </p>
+            <!-- Text -->
+            <p>
+             Les projets des élèves sont enfin en ligne. Vous pouvez les consulter <a href="https://palomaceo.github.io/Projet-film/" target="_blank">ici</a> et <a href="https://wyrz-t.github.io/Projet-Film/" target="_blank">ici</a>.
+            </p>
 
-              </li>
-              <li class="d-flex">
+ <!-- Figure -->
+ <figure class="figure mb-7 mt-6">
 
-                <!-- Check -->
-                <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                  <i class="fe fe-check"></i>
-                </div>
+    <!-- Image -->
+    <img class="figure-img img-fluid rounded lift lift-lg" src="assets/img/photos/films-resultat.jpg" alt="...">
 
-                <!-- Text -->
-                <p>
-                    Demander à l’utilisateur sa pointure et son année de naissance. Créer une fonction qui fait les calculs suivants : Multiplier la pointure par 2, Ajouter 5 au résultat, Multiplier le tout par 50, Soustraire l’année de naissance, Ajouter au tout 1766. La fonction doit retourner le résultat. Tester avec votre date de naissance et votre pointure.
-                </p>
+    <!-- Caption -->
+    <figcaption class="figure-caption text-center">
+     Le résultat final 
+    </figcaption>
 
-              </li>
-              <li class="d-flex">
-
-                <!-- Check -->
-                <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                  <i class="fe fe-check"></i>
-                </div>
-
-                <!-- Text -->
-                <p>
-                    Demander à l’utilisateur de saisir son âge. S’il a plus de 18 ans, afficher *" Vous êtes majeur "*. Sinon afficher *" Vous êtes mineur "*.
-                </p>
-
-              </li>
-              <li class="d-flex">
-
-                <!-- Check -->
-                <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                  <i class="fe fe-check"></i>
-                </div>
-
-                <!-- Text -->
-                <p>
-                    Dans le fichier HTML fourni, changer l'image au survol de celle-ci par la deuxième.
-                </p>
-
-              </li>
-            </ul>
-
-             <!-- Divider -->
-             <hr class="hr-md mb-7">
-
-<p>Pour les exercices de niveau 2, un peu plus poussé, les élèves ont appris certains notions de javascript indispensable de type <i>querySelector</i> qui permet de sélectionner un élement HTML par son identifiant ou sa classe, ou <i>addEventListener</i>. Plusieurs événements peuvent-être déclenchés sur une page et il est possible d'écouter ces événements grâce à la méthode <i>addEventListener()</i> et de déclencher une fonction en guise de rétroaction. Les clics (<i>mouseclick</i>) ou les survols (<i>mouseover</i>) sont des exemples d'évènements possibles sur un objet (bouton, image, etc).</p>
+  </figure>
 
           </div>
         </div> <!-- / .row -->
@@ -403,8 +413,8 @@
                 </h6>
 
                 <!-- Date -->
-                <time class="fs-sm text-muted" datetime="2019-05-20">
-                  Publié le 5 mars 2022
+                <time class="fs-sm text-muted" datetime="2022-06-11">
+                  Publié le 11 juin 2022
                 </time>
 
               </div>
@@ -448,8 +458,8 @@
         <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>      </div>
     </div>
 
-     <!-- FOOTER -->
-     <footer class="py-8 py-md-11 bg-light">
+    <!-- FOOTER -->
+    <footer class="py-8 py-md-11 bg-light">
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-4 col-lg-3">
