@@ -206,11 +206,9 @@
             <p class="mb-0">
               Pour commencer, sélectionnons les éléments devant être présentés sous forme de boîtes flexibles. Pour ce faire, donnons une valeur spéciale à la propriété display du parent de ces éléments à disposer. Par exemple, nous allons donner la valeur flex à l'élément &lt;section&gt; (qui devient un conteneur flex) :
             </p>
-            <pre class="mt-7"><br>
-              section {
+            <pre class="mt-7">section {
                 display: flex;
-              }
-            </pre>
+              }</pre>
             <p>Cette unique déclaration donne ainsi une disposition en plusieurs colonnes de largeur égale et toutes de même hauteur. Ceci parce que les valeurs par défaut données aux éléments flex (les enfants du conteneur flex) sont configurés pour résoudre des problèmes courants tels celui-ci. Exemple :</p>
 
                         <!-- Figure -->
@@ -246,13 +244,11 @@
               Flexbox dispose de la propriété flex-direction pour indiquer la direction de l'axe principal (direction dans laquelle les enfants flexibles sont disposés). Cette propriété est égale par défaut à <i>row</i> : ils sont donc disposés en ligne, dans le sens de lecture de la langue par défaut du navigateur (de gauche à droite, dans le cas d'un navigateur français). On peut les mettre en colonne avec la valeur <i>column</i>, et l'on peut inverser les sens avec <i>row-reverse</i> et <i>column-reverse</i>.
             </p>
             <h3 class="mt-7">Alignement</h3>
-            <pre class="mt-5"><br>
-              div {
+            <pre class="mt-5">div {
                 display: flex;
                 align-items: center;
                 justify-content: space-around;
-              }
-            </pre>
+              }</pre>
             <ul class="mb-0">
               <li>
                 La propriété CSS <i>align-items</i> fixe là où les éléments flex sont placés sur l'axe perpendiculaire. Par défaut, la valeur est stretch, qui étire tous les éléments flex de manière à emplir le conteneur parent. Avec la valeur center, les éléments gardent leur dimension intrinsèque, tout en étant centrés sur l'axe. Il y a également des valeurs comme flex-start et flex-end qui alignent respectivement tous les éléments au début ou à la fin. 
@@ -323,12 +319,10 @@
             <p>
               Les pistes peuvent être définies à l'aide de n'importe quelle unité de mesure. Les grilles proposent aussi une nouvelle unité de mesure pour aider à la création de pistes flexibles. Cette unité, fr, représente une fraction de l'espace disponible dans le conteneur de la grille. Le code suivant crée trois colonnes égales qui se redimensionnent en fonction de l'espace disponible.
             </p>
-            <pre class="mt-5"><br>
-              .wrapper {
+            <pre class="mt-5"><br>.wrapper {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
-              }
-            </pre>
+              }</pre>
 
             <p>
               Les propriétés <i>grid-row</i> et <i>grid-column</i> définissent quelle(s) ligne(s) et quelle(s) colonnes(s) notre élément HTML va occuper. Et <i>grid-gap</i> va définir l'espacement entre les cellules de la grid.
