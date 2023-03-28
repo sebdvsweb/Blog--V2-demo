@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
     
     <!-- Title -->
-    <title>À propos du langage JavaScript</title>
+    <title>Flexbox et Grid CSS</title>
     <style>
       pre {
         background: #F6F6F6;
@@ -27,8 +27,8 @@
   </head>
   <body>
 
-     <!-- NAVBAR -->
-     <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
       <div class="container">
     
         <!-- Brand -->
@@ -81,9 +81,9 @@
     
       </div>
     </nav>
-    
+
     <!-- IMAGE -->
-    <section data-jarallax data-speed=".8" class="py-12 py-md-15 bg-cover jarallax overlay overlay-black overlay-70" style="background-image: url(assets/img/photos/hero-js.jpg);">
+    <section data-jarallax data-speed=".8" class="py-12 py-md-15 bg-cover jarallax overlay overlay-black overlay-70" style="background-image: url(assets/img/photos/fg-propriete-valeurs.jpg);">
     
       <div class="container">
         <div class="row justify-content-center">
@@ -91,12 +91,12 @@
 
             <!-- Heading -->
             <h1 class="display-2 fw-bold text-white">
-              Le Langage JavaScript
+              Flexbox et Grid CSS
             </h1>
 
             <!-- Text -->
             <p class="lead mb-0 text-white-75">
-              Quelques exercices pour comprendre le rôle du JS
+              Flexbox et les Grid CSS sont des méthodes simples de positionnement des éléments HTML.
             </p>
 
           </div>
@@ -113,12 +113,12 @@
 
             <!-- Heading -->
             <h1 class="display-4 text-center">
-              Euh... C'est quoi le JavaScript ????
+              Flexbox
             </h1>
 
             <!-- Text -->
             <p class="lead mb-7 text-center text-muted">
-                JavaScript est un langage de script orienté objet. Il permet, entre autres, d'introduire sur une page web ou HTML des petites animations, des effets et des interactions entre le site web et son utilisateur.
+              Flexbox est une méthode de mise en page selon un axe principal, permettant de disposer des éléments en ligne ou en colonne. Les éléments se dilatent ou se rétractent pour occuper l'espace disponible.
             </p>
 
             <!-- Meta -->
@@ -142,7 +142,7 @@
 
                 <!-- Date -->
                 <time class="fs-sm text-muted" datetime="2021-11-27">
-                  Publié le 5 mars 2022
+                  Publié le 18 avril 2022
                 </time>
 
               </div>
@@ -186,26 +186,45 @@
         <div class="row justify-content-center">
           <div class="col-12 col-md-10 col-lg-9 col-xl-8">
 
-            <!-- Fugure -->
+            <!-- Figure -->
             <figure class="figure mb-7">
 
               <!-- Image -->
-              <img class="figure-img img-fluid rounded lift lift-lg" src="assets/img/photos/javascript-e.jpg" alt="...">
+              <img class="figure-img img-fluid rounded lift lift-lg" src="assets/img/photos/fg-propriete-valeurs.jpg" alt="...">
 
               <!-- Caption -->
               <figcaption class="figure-caption text-center">
-                Le contenu des exercices JS
+                Positionner des éléments avec flex devient un jeu d'enfant !
               </figcaption>
 
             </figure>
 
             <!-- Text -->
             <p>
-                Après avoir travaillé sur le HTML et le CSS, nous avons travaillé sur des petits exercices de Javascript. Contrairement aux deux autres langages, celui-ci permet de faire des interactions directs avec l'utilisateur. 
+              Pendant longtemps, les seuls outils de mise en page CSS fiables et compatibles avec les navigateurs, étaient les propriétés concernant les flotteurs (boîtes flottantes) et le positionnement. Ces outils sont bien et fonctionnent, mais restent à certains égards plutôt limitatifs et frustrants.
             </p>
             <p class="mb-0">
-                Par exemple, lui demander son nom, son prénom, son âge, etc, et on peut créer des variables qui récupèrent ces informations et les affichent ensuite de différentes manières.
+              Pour commencer, sélectionnons les éléments devant être présentés sous forme de boîtes flexibles. Pour ce faire, donnons une valeur spéciale à la propriété display du parent de ces éléments à disposer. Par exemple, nous allons donner la valeur flex à l'élément &lt;section&gt; (qui devient un conteneur flex) :
             </p>
+            <pre class="mt-7"><br>
+              section {
+                display: flex;
+              }
+            </pre>
+            <p>Cette unique déclaration donne ainsi une disposition en plusieurs colonnes de largeur égale et toutes de même hauteur. Ceci parce que les valeurs par défaut données aux éléments flex (les enfants du conteneur flex) sont configurés pour résoudre des problèmes courants tels celui-ci. Exemple :</p>
+
+                        <!-- Figure -->
+                        <figure class="figure mb-7">
+
+                          <!-- Image -->
+                          <img class="figure-img img-fluid rounded lift lift-lg" src="assets/img/photos/fg-mise-page-flex.png" alt="...">
+            
+                          <!-- Caption -->
+                          <figcaption class="figure-caption text-center">
+                            Un simple "display: flex" résout bien des problèmes !
+                          </figcaption>
+            
+                        </figure>
           </div>
         </div> <!-- / .row -->
       </div> <!-- / .container -->
@@ -219,53 +238,45 @@
 
             <!-- Heading -->
             <h2 class="fw-bold">
-              Variables et conditions
+              En détail
             </h2>
 
             <!-- Text -->
             <p>
-                Une variable est un objet repéré par son nom, pouvant contenir des données, qui pourront être modifiées lors de l'exécution du programme. Dans nos exercices, nous avons utilisé les variables pour récupérer les données de champ input, de div ou fenêtre prompt. On utilise <i>var</i> ou <i>let</i> pour définir une variable.
+              Flexbox dispose de la propriété flex-direction pour indiquer la direction de l'axe principal (direction dans laquelle les enfants flexibles sont disposés). Cette propriété est égale par défaut à <i>row</i> : ils sont donc disposés en ligne, dans le sens de lecture de la langue par défaut du navigateur (de gauche à droite, dans le cas d'un navigateur français). On peut les mettre en colonne avec la valeur <i>column</i>, et l'on peut inverser les sens avec <i>row-reverse</i> et <i>column-reverse</i>.
             </p>
-            <p>
-                La méthode prompt() affiche une boîte de dialogue, éventuellement avec un message, qui invite l'utilisateur à saisir un texte. On peut voir un exemple de son utilisation sur la capture ci-dessus et sur la vidéo ci-dessous.
-            </p>
-            <p>&nbsp;</p>
-            <p>
-                <video width="100%" autoplay controls muted>
-                    <source src="assets/img/photos/javascript.mp4" type="video/mp4">
-                  </video>
-            </p>
-            <p>
-                L'instruction <i>if</i> exécute une instruction si une condition donnée est vraie ou équivalente à vrai. Si la condition n'est pas vérifiée, il est possible d'utiliser une autre instruction : <i>else</i>.
-            </p>
-            <pre>if (condition) {
-                condition1
-              } else {
-                condition2
-              }</pre>
-          </div>
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </section>
+            <h3 class="mt-7">Alignement</h3>
+            <pre class="mt-5"><br>
+              div {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+              }
+            </pre>
+            <ul class="mb-0">
+              <li>
+                La propriété CSS <i>align-items</i> fixe là où les éléments flex sont placés sur l'axe perpendiculaire. Par défaut, la valeur est stretch, qui étire tous les éléments flex de manière à emplir le conteneur parent. Avec la valeur center, les éléments gardent leur dimension intrinsèque, tout en étant centrés sur l'axe. Il y a également des valeurs comme flex-start et flex-end qui alignent respectivement tous les éléments au début ou à la fin. 
+              </li>
+              <li class="mt-4">
+                La propriété CSS <i>justify-content</i> fixe où les éléments flex sont placés sur l'axe principal. 
+                La valeur par défaut est flex-start : tous les éléments sont disposés vers l'origine de l'axe principal.
+                flex-end est utilisé pour les disposer vers la fin et center pour ls disposer centre de l'axe principal.
+                La valeur space-around distribue régulièrement tous les éléments le long de l'axe principal, en laissant autant d'espace à chaque extrémité qu'entre chacun, et space-between, semblable à space-around, mais qui ne laisse pas d'espace aux extrémités.
+              </li>
+            </ul>
 
-    <!-- SECTION -->
-    <section class="pt-6 pt-md-8">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-lg-11 col-xl-10">
+              <!-- Figure -->
+              <figure class="figure mt-7 mb-7">
 
-            <!-- Slider -->
-            <div data-flickity='{"wrapAround": true, "pageDots": false, "imagesLoaded": true, "adaptiveHeight": true}'>
-              <div class="w-100">
-                <img src="assets/img/photos/javascript-f.jpg" alt="..." class="img-fluid rounded">
-              </div>
-              <div class="w-100">
-                <img src="assets/img/photos/javascript-g.jpg" alt="..." class="img-fluid rounded">
-              </div>
-              <div class="w-100">
-                <img src="assets/img/photos/javascript-h.jpg" alt="..." class="img-fluid rounded">
-              </div>
-            </div>
+                <!-- Image -->
+                <img class="figure-img img-fluid rounded lift lift-lg" src="assets/img/photos/fg-flexboxfroggy.jpg" alt="...">
+  
+                <!-- Caption -->
+                <figcaption class="figure-caption text-center">
+                  Nous avons joué à des jeux online pour maîtriser les différentes proprétés des flexbox. <br>Ici Flexbox Froggy où l'on déplaces des grenouilles sur leur nénuphar.
+                </figcaption>
+  
+              </figure>
 
           </div>
         </div> <!-- / .row -->
@@ -280,88 +291,61 @@
 
             <!-- Heading -->
             <h2 class="fw-bold">
-              Exemples d'exercices
+              Grid CSS
             </h2>
 
             <!-- Text -->
             <p class="mb-7">
-              Voici un petit listing de certaines consignes données aux élèves sur les exercices à réaliser :
+              Le module CSS Grid Layout ajoute à CSS une grille à deux dimensions. Les grilles peuvent être utilisées pour agencer des pages entières ou de petits éléments d'interface. Une grille est un ensemble de lignes horizontales et verticales qui se croisent – les premières définissant les rangées, et les secondes les colonnes. Les éléments sont placés sur la grille en fonction de ces rangées et colonnes.
             </p>
 
-            <!-- List -->
-            <ul class="list-unstyled mb-7">
-              <li class="d-flex">
 
-                <!-- Check -->
-                <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                  <i class="fe fe-check"></i>
-                </div>
+              <!-- Figure -->
+              <figure class="figure mb-7">
 
-                <!-- Text -->
-                <p>
-                    Afficher une boîte de dialogue permettant de saisir son prénom. Afficher dans une boîte de dialogue "Bonjour, " suivi du prénom saisi.
-                </p>
+                <!-- Image -->
+                <img class="figure-img img-fluid rounded lift lift-lg" src="assets/img/photos/fg-grid-css-a.jpg" alt="...">
+  
+                <!-- Caption -->
+                <figcaption class="figure-caption text-center">
+                  Un simple exemple de grid CSS
+                </figcaption>
+  
+              </figure>
 
-              </li>
-              <li class="d-flex">
+            <!-- Divider -->
+            <hr class="hr-md mb-7">
 
-                <!-- Check -->
-                <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                  <i class="fe fe-check"></i>
-                </div>
+            <!-- Text -->
+            <p>
+              Les propriétés grid-template-columns et grid-template-rows permettent de définir des colonnes et des rangées. Celles-ci définissent les <strong>pistes</strong>. Une piste est l'espace entre deux lignes adjacentes d'une grille.
+            </p>
+            <p>
+              Les pistes peuvent être définies à l'aide de n'importe quelle unité de mesure. Les grilles proposent aussi une nouvelle unité de mesure pour aider à la création de pistes flexibles. Cette unité, fr, représente une fraction de l'espace disponible dans le conteneur de la grille. Le code suivant crée trois colonnes égales qui se redimensionnent en fonction de l'espace disponible.
+            </p>
+            <pre class="mt-5"><br>
+              .wrapper {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+              }
+            </pre>
 
-                <!-- Text -->
-                <p>
-                    Demander à l’utilisateur deux nombres à virgule. Ne garder que la partie entière du premier .  
-                    Les multiplier et afficher le résultat dans une boîte de dialogue.
-                </p>
+            <p>
+              Les propriétés <i>grid-row</i> et <i>grid-column</i> définisse quelle(à) ligne(s) et quelle(s) colonnes(s)s notre élément HTML va occuper. Et <i>grid-gap</i> va définir l'espacement entre les cellules de la grid.
+            </p>
 
-              </li>
-              <li class="d-flex">
+            <!-- Figure -->
+            <figure class="figure mt-5 mb-7">
 
-                <!-- Check -->
-                <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                  <i class="fe fe-check"></i>
-                </div>
+              <!-- Image -->
+              <img class="figure-img img-fluid rounded lift lift-lg" src="assets/img/photos/fg-grid-nintendo.jpg" alt="...">
 
-                <!-- Text -->
-                <p>
-                    Demander à l’utilisateur sa pointure et son année de naissance. Créer une fonction qui fait les calculs suivants : Multiplier la pointure par 2, Ajouter 5 au résultat, Multiplier le tout par 50, Soustraire l’année de naissance, Ajouter au tout 1766. La fonction doit retourner le résultat. Tester avec votre date de naissance et votre pointure.
-                </p>
+              <!-- Caption -->
+              <figcaption class="figure-caption text-center">
+                Exemple de grid complexe
+              </figcaption>
 
-              </li>
-              <li class="d-flex">
-
-                <!-- Check -->
-                <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                  <i class="fe fe-check"></i>
-                </div>
-
-                <!-- Text -->
-                <p>
-                    Demander à l’utilisateur de saisir son âge. S’il a plus de 18 ans, afficher *" Vous êtes majeur "*. Sinon afficher *" Vous êtes mineur "*.
-                </p>
-
-              </li>
-              <li class="d-flex">
-
-                <!-- Check -->
-                <div class="badge badge-rounded-circle bg-success-soft mt-1 me-4">
-                  <i class="fe fe-check"></i>
-                </div>
-
-                <!-- Text -->
-                <p>
-                    Dans le fichier HTML fourni, changer l'image au survol de celle-ci par la deuxième.
-                </p>
-
-              </li>
-            </ul>
-
-             <!-- Divider -->
-             <hr class="hr-md mb-7">
-
-<p>Pour les exercices de niveau 2, un peu plus poussé, les élèves ont appris certains notions de javascript indispensable de type <i>querySelector</i> qui permet de sélectionner un élement HTML par son identifiant ou sa classe, ou <i>addEventListener</i>. Plusieurs événements peuvent-être déclenchés sur une page et il est possible d'écouter ces événements grâce à la méthode <i>addEventListener()</i> et de déclencher une fonction en guise de rétroaction. Les clics (<i>mouseclick</i>) ou les survols (<i>mouseover</i>) sont des exemples d'évènements possibles sur un objet (bouton, image, etc).</p>
+            </figure>
 
           </div>
         </div> <!-- / .row -->
@@ -410,7 +394,7 @@
 
                 <!-- Date -->
                 <time class="fs-sm text-muted" datetime="2019-05-20">
-                  Publié le 5 mars 2022
+                  Publié le 18 avril 2022
                 </time>
 
               </div>
@@ -454,8 +438,8 @@
         <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>      </div>
     </div>
 
-     <!-- FOOTER -->
-     <footer class="py-8 py-md-11 bg-light">
+    <!-- FOOTER -->
+    <footer class="py-8 py-md-11 bg-light">
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-4 col-lg-3">
