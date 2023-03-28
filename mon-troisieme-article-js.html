@@ -17,12 +17,18 @@
     <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
     
     <!-- Title -->
-    <title>Découverte du HTML & CSS</title>
+    <title>Jouer avec JavaScript</title>
+    <style>
+      pre {
+        background: #F6F6F6;
+        padding:2px;
+      }
+    </style>
   </head>
   <body>
 
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+     <!-- NAVBAR -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-white">
       <div class="container">
     
         <!-- Brand -->
@@ -75,9 +81,9 @@
     
       </div>
     </nav>
-
+    
     <!-- IMAGE -->
-    <section data-jarallax data-speed=".8" class="py-12 py-md-15 bg-cover jarallax overlay overlay-black overlay-70" style="background-image: url(assets/img/covers/cover-article-1-b.png);">
+    <section data-jarallax data-speed=".8" class="py-12 py-md-15 bg-cover jarallax overlay overlay-black overlay-70" style="background-image: url(assets/img/photos/js-2-change-source-onlick.jpg);">
     
       <div class="container">
         <div class="row justify-content-center">
@@ -85,12 +91,12 @@
 
             <!-- Heading -->
             <h1 class="display-2 fw-bold text-white">
-              Premier article
+              Modifier le DOM avec JavaScript
             </h1>
 
             <!-- Text -->
             <p class="lead mb-0 text-white-75">
-              Mes premiers cours de HTML.
+              Quelques exercices pour apprendre à jouer avec HTML et CSS en JavaScript
             </p>
 
           </div>
@@ -107,12 +113,12 @@
 
             <!-- Heading -->
             <h1 class="display-4 text-center">
-              Ce que j'ai fait pendant ces premiers cours
+              Comment modifier des éléments HTML et du CSS avec le langage JS
             </h1>
 
             <!-- Text -->
             <p class="lead mb-7 text-center text-muted">
-              Découverte des langages HTML et CSS, prise en main du framework Bootstrap et de son système de grille, découverte du site codepen pour réaliser des exercices de code.
+                Pour rappel, JavaScript est un langage de programmation qui permet de créer du contenu mis à jour de façon dynamique, de contrôler le contenu multimédia, d'animer des images, et aussi de modifier des éléments HTML et CSS prédéfinis.
             </p>
 
             <!-- Meta -->
@@ -136,7 +142,7 @@
 
                 <!-- Date -->
                 <time class="fs-sm text-muted" datetime="2021-11-27">
-                  Publié le 4 décembre 2021
+                  Publié le 22 février 2023
                 </time>
 
               </div>
@@ -180,25 +186,25 @@
         <div class="row justify-content-center">
           <div class="col-12 col-md-10 col-lg-9 col-xl-8">
 
-            <!-- Fugure -->
+            <!-- Figure -->
             <figure class="figure mb-7">
 
               <!-- Image -->
-              <img class="figure-img img-fluid rounded lift lift-lg" src="assets/img/photos/bootstrap-1.png" alt="...">
+              <img class="figure-img img-fluid rounded lift lift-lg" src="assets/img/photos/js-2-query-selector.jpg" alt="...">
 
               <!-- Caption -->
               <figcaption class="figure-caption text-center">
-                Le fonctionnement des colonnes avec Bootstrap
+                Le contenu des exercices JS
               </figcaption>
 
             </figure>
 
             <!-- Text -->
             <p>
-              Le premier cours a été l'occasion de rencontrer les élèves de la promotion GT 1D Thimo et Macéo et d'en apprendre un peu sur eux. Je me suis présenté puis nous avons parlé de Garage 404, des cours de cette année, de leurs contenus et de ce que l'on attendrait d'eux.
+                Après avoir effectué une découverte du JavaScript à travers quelques petits exercices pour manipuler les variables et découvrir quelques bases, nous avons été plus loin dans la manipulation des éléments HTML/CSS.
             </p>
             <p class="mb-0">
-              Pour ce premier cours, un élève de seconde année nous a accompagné. Les deux nouveaux élèves ont présenté leurs projets Scratch réalisés par le passé, et le GT2 leur a présenté son site réalisé l'an passé sur le framework Bootstrap, que nous allons étudier cette année.
+                Nous avons appris à modifier des éléments HTML grâce à différentes méthodes de sélections et d'applications.
             </p>
           </div>
         </div> <!-- / .row -->
@@ -213,21 +219,61 @@
 
             <!-- Heading -->
             <h2 class="fw-bold">
-              HTML et CSS à travers CodePen
+              Variables et getElementById
             </h2>
 
             <!-- Text -->
             <p>
-              Codepen.io est un site Internet nous permettant de tester rapidement tous les fragments de code qui vont nous faire découvrir le balisage HTML. Avec une interface simple, le site vous permet d’écrire du code HTML, CSS, et Javascript et de simuler la page que les codes sont censés créer.
+                Une variable est un objet repéré par son nom, pouvant contenir des données, qui pourront être modifiées lors de l'exécution du programme. Dans nos exercices, nous avons utilisé les variables pour récupérer les données de champ input, de div ou d'image. On utilise <i>let</i> pour définir une variable.
             </p>
-            <ul class="mb-0">
-              <li>
-                Le premier langage étudié est le HTML. C’est un langage qui permet de composer des pages web. On parle de langage de balisage et non de langage de programmation, car le but du HTML est d’encadrer les différents éléments présents dans une page (images, titres, paragraphes ...) par des balises.
-              </li>
-              <li class="mt-4">
-                CSS (Cascading Style Sheets) est un langage de styles. Il permet d'apporter du design au contenu HTML intégré. CSS est capable de changer tous les aspects de design d'une page Web comme les couleurs, les positions, les transformations, les animations et bien beaucoup d'autres choses.
-              </li>
-            </ul>
+            <p>
+                La méthode getElementById va nous permettre de sélectionner un élément HTML (input, div, image, paragraphe, etc) par son identifiant por pouvoir le modifier. 
+            </p>
+            <p>&nbsp;</p>
+            <p>
+                 <!-- Image -->
+              <img class="figure-img img-fluid rounded lift lift-lg" src="assets/img/photos/js-2-change-source-onlick.jpg" alt="...">
+            </p>
+            <pre>let image = document.getElementById("myImage");</pre> 
+            <p>Nous allons par exemple créer ce que l'on appelle un écouteur d'évènement sur un bouton, et au clic sur ce bouton, modifier la source d'une image à afficher par exemple :</p>
+            <pre>
+let image = document.getElementById("myImage");
+let btn1 = document.querySelector("#image1");
+
+btn1.addEventListener("click", function(){
+  
+   image.src = 'https://sebastien-devos.fr/img/codegt/trotro1.jpg';
+  
+});
+            </pre>
+            <p>De la même façon, nous allons pourvoir modifier la valeur d'un champ input, la couleur d'une div, le contenu HTML d'un paragraphe, etc etc. Presque tout est modifiable avec un peu de code JavaScript.</p>
+            
+             <!-- Figure -->
+             <figure class="figure my-7">
+
+              <!-- Image -->
+              <img class="figure-img img-fluid rounded lift lift-lg" src="assets/img/photos/js-2-css-modification.jpg" alt="...">
+
+              <!-- Caption -->
+              <figcaption class="figure-caption text-center">
+                Modofocation d'une div et d'un input
+              </figcaption>
+
+            </figure>
+
+            <pre>
+let toHide = document.getElementById("toHide");
+let toShow = document.getElementById("toShow");
+let input = document.getElementById("monInput");
+let bouton = document.getElementById("monBouton");
+
+function salade() {
+  toHide.style.display = 'none'
+  toShow.style.display = "block"
+  input.value = "2"
+  toShow.style.backgroundColor = "#FF0000"
+}
+            </pre>
 
           </div>
         </div> <!-- / .row -->
@@ -243,13 +289,13 @@
             <!-- Slider -->
             <div data-flickity='{"wrapAround": true, "pageDots": false, "imagesLoaded": true, "adaptiveHeight": true}'>
               <div class="w-100">
-                <img src="assets/img/photos/article-1-a.png" alt="..." class="img-fluid rounded">
+                <img src="assets/img/photos/js-2-query-selector.jpg" alt="..." class="img-fluid rounded">
               </div>
               <div class="w-100">
-                <img src="assets/img/photos/article-1-b.png" alt="..." class="img-fluid rounded">
+                <img src="assets/img/photos/js-2-add-class.jpg" alt="..." class="img-fluid rounded">
               </div>
               <div class="w-100">
-                <img src="assets/img/photos/article-1-c.png" alt="..." class="img-fluid rounded">
+                <img src="assets/img/photos/js-2-change-source-onlick.jpg" alt="..." class="img-fluid rounded">
               </div>
             </div>
 
@@ -266,30 +312,12 @@
 
             <!-- Heading -->
             <h2 class="fw-bold">
-              C'est quoi Bootstrap ?
+              Autres méthodes et classList
             </h2>
 
             <!-- Text -->
             <p class="mb-7">
-              Bootstrap est une collection d'outils utiles à la création du design de sites et d'applications web. C'est un ensemble qui contient des codes HTML et CSS, des formulaires, boutons, outils de navigation et autres éléments interactifs, ainsi que des extensions JavaScript en option, tout cela étant prêt à l'emploi. Bootstrap s'appuie sur un système de découpage de l'écran en grille ou <i>grid</i> en anglais.
-            </p>
-
-            <!-- Divider -->
-            <hr class="hr-md mb-7">
-
-            <!-- Blockquote -->
-            <blockquote class="blockquote mb-7">
-              <p class="h2 mb-0 text-center text-primary-desat">
-                “Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.”
-              </p>
-            </blockquote>
-
-            <!-- Divider -->
-            <hr class="hr-md mb-7">
-
-            <!-- Text -->
-            <p>
-              Grid System (Système de grille) est un des concepts les plus importants de Bootstrap. Il vous donne le moyen d'organiser les composants sur une interface et pour que votre website soit compatible avec différents appareils. Le système de grille (Grid System) de Bootstrap contient plusieurs lignes mais il n'y a que 12 colonnes. En détail :
+              La méthode getElementById n'est pas seule méthode utilisée pour modifier des éléments HTML.
             </p>
 
             <!-- List -->
@@ -303,7 +331,7 @@
 
                 <!-- Text -->
                 <p>
-                  Pour utiliser ce système de grilles Bootstrap, nous allons avant tout devoir définir un élément conteneur dans notre page HTML auquel on passera un attribut class="container" (taille fixée en pixel) ou class="container-fluid" (taille full screen). La classe .container va permettre de définir un conteneur adaptable ou « responsive » de taille fixe, ce qui signifie que notre conteneur aura toujours la même taille pour un breakpoint donné et changera de taille à chaque breakpoint.
+                    La méthode querySelector permet de récupérer n'importe quel élément HTML via son id, sa class, et tout simplement une balise HTML existante.
                 </p>
 
               </li>
@@ -316,7 +344,7 @@
 
                 <!-- Text -->
                 <p>
-                  Dans le système de grille de Bootstrap, les lignes ou <i>row</i> en anglais doivent absolument être placées dans des conteneurs et ne sont utilisées que dans le but de servir elles-mêmes de conteneurs pour les colonnes de la grille
+                    La méthode querySelectorAll permet de sélectionner tous les éléments HTML ayant une même classe, ou tout un ensemble de balises HTML identiques. Par exemple, querySelectorAll("p") permet de sélectionner tous les paragraphes d'une page web. On utilisera ensuite une boucle forEach pour modifier ces éléments.
                 </p>
 
               </li>
@@ -329,12 +357,14 @@
 
                 <!-- Text -->
                 <p>
-                  Pour chaque nouvelle ligne, on va pouvoir décider du nombre de colonnes dont la ligne va disposer à partir des 12 de base grâce à des classes .col-*. On va ensuite pouvoir « grouper » certaines de ces 12 colonnes de base ensemble dans chaque ligne pour former de nouvelles colonnes personnalisées qui contiendront nos éléments HTML (texte, image, etc).
+                    classList.add, classList.Remove et classList.toggle vont nous permettre d'ajouter ou de retirer dynamiquement une classe à un élélent HTML.
                 </p>
 
               </li>
             </ul>
 
+             <!-- Divider -->
+             <hr class="hr-md mb-7">
           </div>
         </div> <!-- / .row -->
       </div> <!-- / .container -->
@@ -382,7 +412,7 @@
 
                 <!-- Date -->
                 <time class="fs-sm text-muted" datetime="2019-05-20">
-                  Publié le 4 décembre 2021
+                  Publié le 22 février 2023
                 </time>
 
               </div>
@@ -426,8 +456,8 @@
         <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>      </div>
     </div>
 
-    <!-- FOOTER -->
-    <footer class="py-8 py-md-11 bg-light">
+     <!-- FOOTER -->
+     <footer class="py-8 py-md-11 bg-light">
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-4 col-lg-3">
