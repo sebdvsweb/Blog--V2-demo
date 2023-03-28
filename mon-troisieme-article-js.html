@@ -227,7 +227,7 @@
                 Une variable est un objet repéré par son nom, pouvant contenir des données, qui pourront être modifiées lors de l'exécution du programme. Dans nos exercices, nous avons utilisé les variables pour récupérer les données de champ input, de div ou d'image. On utilise <i>let</i> pour définir une variable.
             </p>
             <p>
-                La méthode getElementById va nous permettre de sélectionner un élément HTML (input, div, image, paragraphe, etc) par son identifiant por pouvoir le modifier. 
+                La méthode <strong>getElementById</strong> va nous permettre de sélectionner un élément HTML (input, div, image, paragraphe, etc) par son identifiant pour pouvoir le modifier. 
             </p>
             <p>&nbsp;</p>
             <p>
@@ -244,9 +244,8 @@ btn1.addEventListener("click", function(){
   
    image.src = 'https://sebastien-devos.fr/img/codegt/trotro1.jpg';
   
-});
-            </pre>
-            <p>De la même façon, nous allons pourvoir modifier la valeur d'un champ input, la couleur d'une div, le contenu HTML d'un paragraphe, etc etc. Presque tout est modifiable avec un peu de code JavaScript.</p>
+});</pre>
+            <p>De la même façon, nous allons pourvoir modifier la valeur d'un champ input, la couleur d'une div, le contenu HTML d'un paragraphe, etc. Presque tout est modifiable avec un peu de code JavaScript.</p>
             
              <!-- Figure -->
              <figure class="figure my-7">
@@ -256,13 +255,12 @@ btn1.addEventListener("click", function(){
 
               <!-- Caption -->
               <figcaption class="figure-caption text-center">
-                Modofocation d'une div et d'un input
+                Modification d'une div et d'un input
               </figcaption>
 
             </figure>
 
-            <pre>
-let toHide = document.getElementById("toHide");
+            <pre>let toHide = document.getElementById("toHide");
 let toShow = document.getElementById("toShow");
 let input = document.getElementById("monInput");
 let bouton = document.getElementById("monBouton");
@@ -272,8 +270,7 @@ function salade() {
   toShow.style.display = "block"
   input.value = "2"
   toShow.style.backgroundColor = "#FF0000"
-}
-            </pre>
+}</pre>
 
           </div>
         </div> <!-- / .row -->
@@ -331,7 +328,7 @@ function salade() {
 
                 <!-- Text -->
                 <p>
-                    La méthode querySelector permet de récupérer n'importe quel élément HTML via son id, sa class, et tout simplement une balise HTML existante.
+                    La méthode <strong>querySelector</strong> permet de récupérer n'importe quel élément HTML via son id, sa class, et tout simplement une balise HTML existante.
                 </p>
 
               </li>
@@ -344,7 +341,7 @@ function salade() {
 
                 <!-- Text -->
                 <p>
-                    La méthode querySelectorAll permet de sélectionner tous les éléments HTML ayant une même classe, ou tout un ensemble de balises HTML identiques. Par exemple, querySelectorAll("p") permet de sélectionner tous les paragraphes d'une page web. On utilisera ensuite une boucle forEach pour modifier ces éléments.
+                    La méthode <strong>querySelectorAll</strong> permet de sélectionner tous les éléments HTML ayant une même class, ou tout un ensemble de balises HTML identiques. Par exemple, querySelectorAll("p") permet de sélectionner tous les paragraphes d'une page web. On utilisera ensuite une boucle forEach pour modifier ces éléments.
                 </p>
 
               </li>
@@ -357,7 +354,7 @@ function salade() {
 
                 <!-- Text -->
                 <p>
-                    classList.add, classList.Remove et classList.toggle vont nous permettre d'ajouter ou de retirer dynamiquement une classe à un élélent HTML.
+                    <strong>classList.add</strong>, <strong>classList.Remove</strong> et <strong>classList.toggle</strong> vont nous permettre d'ajouter ou de retirer dynamiquement une class à un élélent HTML.
                 </p>
 
               </li>
